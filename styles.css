@@ -26,3 +26,30 @@
     background-color: #0081f9; /* Background color on hover */
 }
 
+.home {
+    background-color: #357ad3; /* Background color of the homepage */
+    overflow: hidden; /* Ensures content does not overflow */
+}
+
+.home ul {
+    list-style-type: none; /* Remove default list styles */
+    margin: 0;
+    padding: 0;
+}
+
+.home ul li {
+    float: right; /* Float list items to display them horizontally */
+}
+
+.home ul li a {
+    display: block; /* Make the anchor tags block-level for easier styling */
+    color: white; /* Text color of the links */
+    text-align: center; /* Center-align text within the link */
+    padding: 14px 20px; /* Padding inside each link */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.home ul li a:hover {
+    background-color: #0081f9; /* Background color on hover */
+}
+
