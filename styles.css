@@ -11,7 +11,7 @@
 }
 
 .navbar ul li {
-    float: left; /* Float list items to display them horizontally */
+    float: right; /* Float list items to display them horizontally */
 }
 
 .navbar ul li a {
