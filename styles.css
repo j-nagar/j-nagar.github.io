@@ -11,7 +11,7 @@
 }
 
 .navbar ul li {
-    float: right; /* Float list items to display them horizontally */
+    float: left; /* Float list items to display them horizontally */
 }
 
 .navbar ul li a {
@@ -23,5 +23,5 @@
 }
 
 .navbar ul li a:hover {
-    background-color: #555; /* Background color on hover */
+    background-color: #0081f9; /* Background color on hover */
 }
