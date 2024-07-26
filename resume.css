@@ -8,3 +8,16 @@
     text-decoration: none; /* Remove underline from links */
   }
   
+  .resume_blocks {
+    background-color: rgb(50, 102, 197);
+    overflow: hidden; /* Ensures content does not overflow */
+    color: white;
+    margin: 20px;
+    padding: 20px;
+    text-align: center; /* Center-align text within the link */
+    text-decoration: none; /* Remove underline from links */
+
+    border: 2px solid rgb(0, 36, 113);
+    margin: 20px;
+    padding: 20px;
+  }
