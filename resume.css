@@ -21,3 +21,13 @@
     margin: 20px;
     padding: 20px;
   }
+
+  .resume_head {
+    background-color: rgb(34, 90, 195);
+    overflow: hidden; /* Ensures content does not overflow */
+    color: white;
+    margin: 0;
+    padding: 0;
+    text-align: left; /* left-align text within the link */
+    text-decoration: none; /* Remove underline from links */
+  }
