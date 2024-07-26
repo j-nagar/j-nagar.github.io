@@ -30,4 +30,8 @@
     padding: 20px;
     text-align: left; /* left-align text within the link */
     text-decoration: none; /* Remove underline from links */
+
+    border: 2px solid rgb(0, 36, 113);
+    margin: 20px;
+    padding: 20px;
   }
