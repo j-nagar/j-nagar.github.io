@@ -17,9 +17,6 @@
     text-align: center; /* Center-align text within the link */
     text-decoration: none; /* Remove underline from links */
 
-    background-color: #0442a7;
-    margin: 20px;
-    padding: 20px;
   }
 
   .resume_head {
@@ -31,9 +28,6 @@
     text-align: left; /* left-align text within the link */
     text-decoration: none; /* Remove underline from links */
 
-    background-color: #0442a7;
-    margin: 20px;
-    padding: 20px;
   }
 
   .resume_info {
@@ -44,8 +38,5 @@
     padding: 20px;
     text-align: left; /* left-align text within the link */
     text-decoration: none; /* Remove underline from links */
-
-    background-color: #0442a7;
-    margin: 20px;
-    padding: 20px;
+    
   }
