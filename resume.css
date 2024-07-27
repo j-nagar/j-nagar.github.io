@@ -17,7 +17,7 @@
     text-align: center; /* Center-align text within the link */
     text-decoration: none; /* Remove underline from links */
 
-    border: 2px solid rgb(0, 36, 113);
+    background-color: #0442a7;
     margin: 20px;
     padding: 20px;
   }
@@ -31,7 +31,21 @@
     text-align: left; /* left-align text within the link */
     text-decoration: none; /* Remove underline from links */
 
-    border: 2px solid rgb(0, 36, 113);
+    background-color: #0442a7;
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .resume_info {
+    background-color: rgb(50, 102, 197);
+    overflow: hidden; /* Ensures content does not overflow */
+    color: white;
+    margin: 60px;
+    padding: 20px;
+    text-align: left; /* left-align text within the link */
+    text-decoration: none; /* Remove underline from links */
+
+    background-color: #0442a7;
     margin: 20px;
     padding: 20px;
   }
