@@ -6,38 +6,79 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>About - Jamila Nagarwala's Personal Website</title>
         <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file for styling -->
-        <link rel="stylesheet" href="about.css"> <!-- Link to your CSS file for styling -->
-
+        <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'> 
     </head>
 
 <body>
-    <div class="navbar">
-        <ul>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="resume.html">Resume</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="index.html">Home</a></li>
-        </ul>
+        <div class="navbar">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="index.html">Home</a></li>
+                </ul>
+            </nav>
+        </div>
     </div>
-</body>
 
-<!-- <section id="about">
-    <h2>About</h2>
-    <p>Learn about me!</p>
-</section> -->
-
-<body>
-    <div class="about">
-                <h1>Jamila Nagarwala's Personal Website</h1>         
-                <h2>About</h2>                
-                <h3>Learn about me!</h3>
-
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Images/headshot.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Write a desription about myself.</p>
+                
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Languages</span><br>C++, Java Script/HTML/CSS, R, Dart</li>
+                        <li><span>Developer Tools/Frameworks</span><br>Git, VS Code, XCode, React, Boot Strap, Flutter</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>August - Present</span><br>Office Assitant at University of Michigan Law School</li>
+                        <li><span>June 2020 - Present</span><br>Intern at Big Frog Custom T-shirts</li>
+                        <li><span>September 2023 - October 2023</span><br>Researcher/Interviewer at the University of Michigan Art Museum</li>
+                        <li><span>June 2022 - October 2022</span><br>Law intern at Edwards Sutarwalla PLLC</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>August 2023 - May 2026</span><br>Bachelors in Computer Science at the University of Michigan</li>
+                        <li><span>September 2019 - June 2023 </span><br>Northville High School</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
-</body>
-  
-    <footer>
-        <p>&copy; 2024 Jamila Nagarwala's Personal Website. All rights reserved.</p>
-    </footer>
+</div>
 
-<html>
-<body>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname) {
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+        
+    }
+</script>
+
+
+</body>
+</html>
