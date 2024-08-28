@@ -16,7 +16,7 @@ body{
     background-size: cover;
     background-position: center;
 }
-.navbar {
+.container {
     padding: 10px 10%;
 }
 
@@ -38,7 +38,7 @@ nav ul li{
 }
 
 nav ul li a {
-    color: rgb(42, 112, 234); /* Text color of the links */
+    color: rgb(255, 255, 255); /* Text color of the links */
     text-align: center; /* Center-align text within the link */
     padding: 14px 20px; /* Padding inside each link */
     text-decoration: none; /* Remove underline from links */
@@ -50,7 +50,7 @@ nav ul li a::after{
     content: '';
     width: 0;
     height: 3px;
-    background: rgb(42, 112, 234);
+    background:rgb(42, 112, 234);
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -64,6 +64,7 @@ nav ul li a:hover::after{
 .home{
     margin-top: 20%;
     font-size: 30px;
+    margin-left: 60px;
 }
 
 .home-text h1{
@@ -71,33 +72,164 @@ nav ul li a:hover::after{
     margin-top: 20px;
 }
 
+/* -------------about------------- */
 
-
-
-
-
-
-
-
-
-.navbar ul {
-    list-style-type: none; /* Remove default list styles */
-    margin: 0;
-    padding: 0;
+#about{
+    padding: 80px 0;
+    color:#fff;
 }
 
-.navbar ul li {
-    float: right; /* Float list items to display them horizontally */
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-.navbar ul li a {
-    display: block; /* Make the anchor tags block-level for easier styling */
-    color: white; /* Text color of the links */
-    text-align: center; /* Center-align text within the link */
-    padding: 14px 20px; /* Padding inside each link */
-    text-decoration: none; /* Remove underline from links */
+.about-col-1{
+    flex-basis: 35%;
 }
 
-.navbar ul li a:hover {
-    background-color:  rgb(42, 112, 234); /* Background color on hover */
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
 }
+
+.about-col-2{
+    flex-basis: 60%;
+}
+
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after{
+     content: '';
+     width: 0;
+     height: 3px;
+     background: rgb(42, 112, 234);
+     position: absolute;
+     left: 0;
+     bottom: -8px;
+     transition: 0.5s;
+}
+.tab-links.active-link::after{
+    width: 50%;
+}
+
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tab-contents ul li span{
+    color:rgb(42, 112, 234);
+    font-size: 14px;
+}
+
+.tab-contents{
+    display: none;
+}
+
+.tab-contents.active-tab{
+    display: block;
+}
+
+/* ------------projects------------ */
+
+#projects{
+    padding: 30px 0;
+}
+
+.projects-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 80px;
+    margin-top: 50px;
+}
+
+.projects-list div{
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+
+.projects-list div i{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.projects-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.projects-list div a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.projects-list div:hover{
+    background: rgb(42, 112, 234);
+    transform: translateY(-10px);
+}
+
+.projects-list ul li{
+    margin: 10px 0;
+}
+
+
+/* ---------resume---------- */
+
+#resume{
+    padding: 30px 0;
+}
+
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+
+/* #projects{
+    padding: 50px 0;
+}
+
+.project-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 80px;
+    margin-top: 50px;
+}
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.work img{
+    width: 50%;
+    border-radius: 10px;  
+    display: block; 
+} */
