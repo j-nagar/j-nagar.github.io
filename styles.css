@@ -1,8 +1,84 @@
 /* styles.css */
-.navbar {
-    background-color: #0442a7; /* Background color of the navbar */
-    overflow: hidden; /* Ensures content does not overflow */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display';
+    box-sizing: border-box ;
 }
+body{
+    background: #080808;
+    color: #fff;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(Images/background.png);
+    background-size: cover;
+    background-position: center;
+}
+.navbar {
+    padding: 10px 10%;
+}
+
+nav{
+    display: flex;
+    align-items: left;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo{
+    width: 100px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: rgb(42, 112, 234); /* Text color of the links */
+    text-align: center; /* Center-align text within the link */
+    padding: 14px 20px; /* Padding inside each link */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: rgb(42, 112, 234);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.home{
+    margin-top: 20%;
+    font-size: 30px;
+}
+
+.home-text h1{
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
 
 .navbar ul {
     list-style-type: none; /* Remove default list styles */
@@ -23,5 +99,5 @@
 }
 
 .navbar ul li a:hover {
-    background-color: #0081f9; /* Background color on hover */
+    background-color:  rgb(42, 112, 234); /* Background color on hover */
 }
